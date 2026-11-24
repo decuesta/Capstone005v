@@ -1,0 +1,42 @@
+{
+  "name": "ematch-prototype",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "test": "vitest run",
+    "test:cobertura": "vitest run --coverage",
+    "test:e2e": "playwright test tests/e2e/flujo.spec.ts",
+    "test:e2e:cuenta": "node tests/e2e/con-cuenta.mjs",
+    "test:rendimiento": "playwright test tests/e2e/rendimiento.spec.ts"
+  },
+  "dependencies": {
+    "@google/genai": "^2.23.0",
+    "@supabase/supabase-js": "^2.116.0",
+    "next": "16.3.5",
+    "pdf-lib": "^1.17.1",
+    "react": "19.2.8",
+    "react-dom": "19.2.8"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@vitest/coverage-v8": "4.1.12",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.5",
+    "tailwindcss": "^4",
+    "typescript": "^5",
+    "vitest": "4.1.12"
+  },
+  "allowScripts": {
+    "@google/genai@2.23.0": true,
+    "protobufjs@7.6.6": true,
+    "unrs-resolver@1.12.2": true
+  }
+}

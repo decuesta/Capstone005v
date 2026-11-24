@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#2563EB">
+  <title>Sin conexión · E-Match</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; }
+    body { min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 24px;
+           background: #F8FAFC; color: #0f172a; font-family: system-ui, -apple-system, "Segoe UI", Arial, sans-serif; }
+    main { max-width: 360px; text-align: center; }
+    img { width: 72px; height: 72px; border-radius: 18px; margin-bottom: 16px; }
+    h1 { font-size: 22px; margin-bottom: 8px; }
+    p { font-size: 15px; line-height: 1.5; color: #475569; margin-bottom: 20px; }
+    button { width: 100%; padding: 12px; border: 0; border-radius: 12px; background: #2563EB; color: #fff;
+             font-size: 15px; font-weight: 700; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <main>
+    <img src="/icons/icon-192.png" alt="E-Match">
+    <h1>Sin conexión</h1>
+    <p>E-Match necesita internet para hacer tu diagnóstico. Vuelve a intentarlo cuando te reconectes.</p>
+    <button onclick="location.reload()">Reintentar</button>
+  </main>
+</body>
+</html>
